@@ -1,0 +1,8 @@
+Em triển khai theo phương án CPU do account bị giới hạn quota 8 vCPU (đã xin nhưng chưa phê duyệt) và không xin được instance GPU.
+Hạ tầng được tạo bằng Terraform trên AWS và benchmark chạy trực tiếp trên EC2 private node.
+Dataset: creditcardfraud (284,807 dòng), mô hình LightGBM.
+Kết quả: load_data_seconds=2.7788s, training_seconds=6.1417s, AUC-ROC=0.863543.
+Các metric phân loại: accuracy=0.998613, F1=0.635945, precision=0.579832, recall=0.704082.
+Inference: latency 1 row=1.4378ms, throughput batch(1000)=142315.83 rows/s.
+Kết quả cho thấy pipeline train/inference hoạt động ổn định trên cấu hình CPU hiện tại.
+Hạn chế: đây là cấu hình constrained (t3.micro demo), không tương đương benchmark chuẩn r5.2xlarge.

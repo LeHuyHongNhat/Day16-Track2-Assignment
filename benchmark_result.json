@@ -1,0 +1,20 @@
+{
+  "mode": "t3_micro_demo",
+  "dataset_path": "creditcard.csv",
+  "rows_total_loaded": 284807,
+  "rows_used_for_benchmark": 284807,
+  "load_data_seconds": 2.7788,
+  "training_seconds": 6.1417,
+  "best_iteration": 120,
+  "auc_roc": 0.863543,
+  "accuracy": 0.998613,
+  "f1_score": 0.635945,
+  "precision": 0.579832,
+  "recall": 0.704082,
+  "inference_latency_ms_1_row": 1.4378,
+  "inference_throughput_rows_per_sec_batch": 142315.83,
+  "batch_size_for_throughput": 1000,
+  "n_estimators": 120,
+  "num_leaves": 31,
+  "note": "Demo benchmark for constrained instance; not equivalent to r5.2xlarge full benchmark."
+}

@@ -16,6 +16,7 @@ terraform.rc
 # SSH Keys
 lab-key
 lab-key.pub
+ai-lab-user_accessKeys.csv
 
 # Environment Variables
 .env
